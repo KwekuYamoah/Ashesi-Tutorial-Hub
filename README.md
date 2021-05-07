@@ -1,0 +1,2 @@
+# Ashesi-Tutorial-Hub
+An educational website where students can post tutorial videos or notes under specific courses, with approval from the admin. Other students who use the tutorials can offer reviews that will be classified as positive, negative or neutral using Natural Language Processing. This project is aimed at helping students who can better understand course concepts through other tutorials, ensuring  "inclusive and equitable quality education".
