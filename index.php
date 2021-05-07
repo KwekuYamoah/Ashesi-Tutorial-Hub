@@ -4,7 +4,6 @@
   include_once("./inc/header.php");
   //including navigation header
   include_once("./inc/nav.php");
-  
 ?>
 
 
