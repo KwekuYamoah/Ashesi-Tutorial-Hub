@@ -11,7 +11,7 @@ include_once './inc/nav.php';
     <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
         <h2>Events</h2>
-        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+        <p>BONJOUR</p>
       </div>
     </div><!-- End Breadcrumbs -->
 
@@ -19,7 +19,7 @@ include_once './inc/nav.php';
     <section id="events" class="events">
       <div class="container" data-aos="fade-up">
 
-        <div class="row">
+        <~div class="row">
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
