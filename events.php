@@ -35,7 +35,7 @@ include_once './inc/nav.php';
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/events-1.jpg" alt="...">
+                <img src="assets/img/events-4.jpg" alt="...">
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="">Math tutorial</a></h5>
@@ -47,7 +47,7 @@ include_once './inc/nav.php';
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/events-1.jpg" alt="...">
+                <img src="assets/img/events-3.jpg" alt="...">
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="">Writing center</a></h5>
@@ -75,12 +75,5 @@ include_once './inc/nav.php';
 
   </main><!-- End #main -->
 
-<<<<<<< HEAD
-<?php //include footer
-//include footer
-?>//include footer
-include_once './inc/footer.php'; ?>
-=======
 <?php //include footer
 include_once './inc/footer.php'; ?>
->>>>>>> a155b77f5bb12a7da252c07ad576efc55cf5c7f6
