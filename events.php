@@ -1,9 +1,9 @@
 <?php
-  $title = "Events|Ashesi Tutorial Hub"; //title for header
-  //include header which uses title
-  include_once("./inc/header.php");
-  //including navigation header
-  include_once("./inc/nav.php");
+$title = 'Events|Ashesi Tutorial Hub'; //title for header
+//include header which uses title
+include_once './inc/header.php';
+//including navigation header
+include_once './inc/nav.php';
 ?>
   <main id="main">
 
@@ -26,7 +26,6 @@
                 <img src="assets/img/events-1.jpg" alt="...">
               </div>
               <div class="card-body">
-<<<<<<< HEAD
                 <h5 class="card-title"><a href="">DSC meeting</a></h5>
                 <p class="fst-italic text-center">Saturday, September 26th at 3:00 pm</p>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
@@ -52,9 +51,6 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="">Writing center</a></h5>
-=======
-                <h5 class="card-title"><a href="">Introduction to webdesign</a></h5>
->>>>>>> a155b77f5bb12a7da252c07ad576efc55cf5c7f6
                 <p class="fst-italic text-center">Sunday, September 26th at 7:00 pm</p>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
               </div>
@@ -82,11 +78,9 @@
 <<<<<<< HEAD
 <?php //include footer
 //include footer
-include_once './inc/footer.php';
-?>
+?>//include footer
+include_once './inc/footer.php'; ?>
 =======
-<?php
-  //include footer
-  include_once("./inc/footer.php");
-?>
+<?php //include footer
+include_once './inc/footer.php'; ?>
 >>>>>>> a155b77f5bb12a7da252c07ad576efc55cf5c7f6
