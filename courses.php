@@ -11,7 +11,7 @@
     <div class="breadcrumbs">
       <div class="container">
         <h2>Courses</h2>
-        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+        <p>What course do you need info about? </p>
       </div>
     </div><!-- End Breadcrumbs -->
 
@@ -27,10 +27,10 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Web Development</h4>
-                  <p class="price">$169</p>
+                  <!-- <p class="price">$169</p> -->
                 </div>
 
-                <h3><a href="course-details.html">Website Design</a></h3>
+                <h3><a href="course-details.php">Website Design</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -53,10 +53,10 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Marketing</h4>
-                  <p class="price">$250</p>
+                  <!-- <p class="price">$250</p> -->
                 </div>
 
-                <h3><a href="course-details.html">Search Engine Optimization</a></h3>
+                <h3><a href="course-details.php">Search Engine Optimization</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -79,10 +79,10 @@
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Content</h4>
-                  <p class="price">$180</p>
+                  <!-- <p class="price">$180</p> -->
                 </div>
 
-                <h3><a href="course-details.html">Copywriting</a></h3>
+                <h3><a href="course-details.php">Copywriting</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
