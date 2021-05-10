@@ -11,7 +11,7 @@ include_once './inc/nav.php';
     <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
         <h2>Events</h2>
-        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+        <p>Find opportunities in the opportunities that have found you</p>
       </div>
     </div><!-- End Breadcrumbs -->
 
@@ -28,7 +28,7 @@ include_once './inc/nav.php';
               <div class="card-body">
                 <h5 class="card-title"><a href="">DSC meeting</a></h5>
                 <p class="fst-italic text-center">Saturday, September 26th at 3:00 pm</p>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <p class="card-text text-center">Come and learn the use of firebase </p>
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@ include_once './inc/nav.php';
               <div class="card-body">
                 <h5 class="card-title"><a href="">Math tutorial</a></h5>
                 <p class="fst-italic text-center">Sunday, September 26th at 7:00 pm</p>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <p class="card-text text-center">Calculus, pre- calculus and college algebra</p>
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ include_once './inc/nav.php';
               <div class="card-body">
                 <h5 class="card-title"><a href="">Writing center</a></h5>
                 <p class="fst-italic text-center">Sunday, September 26th at 7:00 pm</p>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <p class="card-text text-center">Are you looking to polish up your paper? Visit the writing center</p>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ include_once './inc/nav.php';
               <div class="card-body">
                 <h5 class="card-title"><a href="">Programming tutorial</a></h5>
                 <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p>
-                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+                <p class="card-text text-center">It's not about Hello World anymore, is it? Come and learn more</p>
               </div>
             </div>
 
