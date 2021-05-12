@@ -1,5 +1,5 @@
 <?php 
-    require "db_cred.php";
+    require "../config/db_cred.php";
     //connects to a local dbms
     function connect_db(){
         // Creating connection
@@ -8,7 +8,6 @@
         if (!$conn) {
             die("Connection failed: " . mysqli_connect_error());
         }
-
         return $conn;
     }
 ?>

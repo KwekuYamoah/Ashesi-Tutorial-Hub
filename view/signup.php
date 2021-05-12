@@ -23,7 +23,7 @@
             <div class="image-holder">
                 <img src="../assets/img/ash-images/ashesi-6.jpg" alt="">
             </div>
-            <form action="../controllers/home.php" method="POST" id="signup-form">
+            <form action="../controller/con_home.php" method="POST" id="signup-form">
                 <h3>Sign Up</h3>
                 <div class="form-group">
                     <div class="form-wrapper form-holder active">
