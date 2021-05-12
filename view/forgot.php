@@ -11,10 +11,10 @@ if($_SERVER["REQUEST_METHOD"] =="POST"){
 
     $sql = "SELECT ashesi_mail FROM students WHERE ashesi_mail = '$email'";
 
-    //$result = mysqli_query($connect,$sql) or die ( mysqli_error($sql));
+    $result = mysqli_query($connect,$sql) or die ( mysqli_error($connect));
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-
     $count = mysqli_num_rows($result);
+
 
     // If result matched $email, table row must be 1 row
         
@@ -90,6 +90,6 @@ if($_SERVER["REQUEST_METHOD"] =="POST"){
 	    <script src="../assets/vendor/jquery/jquery-ui.min.js"></script>
 	    <script src="../assets/vendor/jquery/jquery.validate.js"></script>
 		<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-		<script src="../js/forgot.js"></script>
+		<script src="../assets/js/forgot.js"></script>
 	</body>
 </html>

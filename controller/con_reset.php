@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] =="POST"){
     //get email from session array
     $email = $_SESSION['forget_user'];
 
-    $sql = "UPDATE students set password = '$password' where ashesi_mail = '$email'";
+    $sql = "UPDATE students set stud_password = '$password' where ashesi_mail = '$email'";
     $result = mysqli_query($connect,$sql) or die ( mysqli_error($connect));
 
     if($result){

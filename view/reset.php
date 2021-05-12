@@ -7,13 +7,13 @@
 		<title>Reset Password</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo/default.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo/default.png">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
 		<!-- STYLE CSS -->
-		<link rel="stylesheet" href="./assets/css/styles.css">
+		<link rel="stylesheet" href="../assets/css/styles.css">
 	</head>
 
 	<body>
@@ -37,16 +37,16 @@
 		</div>
 
 		<script src="./assets/js/jquery-3.3.1.min.js"></script>
-		<script src="./assets/js/log-main.js"></script>
+		<script src="../assets/js/log-main.js"></script>
 
 		 <!-- JS -->
-		<script src="./assets/vendor/jquery/jquery.min.js"></script>
-		<script src="./assets/vendor/jquery/jquery-ui.min.js"></script>
-		<script src="./assets/vendor/jquery/jquery.validate.js"></script>
+		<script src="../assets/vendor/jquery/jquery.min.js"></script>
+		<script src="../assets/vendor/jquery/jquery-ui.min.js"></script>
+		<script src="../assets/vendor/jquery/jquery.validate.js"></script>
 		<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-		<script src="../js/reset.js"></script>
+		<script src="../assets/js/reset.js"></script>
 
 	</body>
 </html>
