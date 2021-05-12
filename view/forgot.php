@@ -1,5 +1,5 @@
 <?php
-//require_once "../config/connect_db.php";
+require_once "../model/connect_db.php";
 session_start();
 
 if($_SERVER["REQUEST_METHOD"] =="POST"){
@@ -9,7 +9,7 @@ if($_SERVER["REQUEST_METHOD"] =="POST"){
     //connecting ashtutor
     $connect = connect_db();
 
-    $sql = "SELECT email FROM users WHERE email = '$email'";
+    $sql = "SELECT ashesi_mail FROM students WHERE ashesi_mail = '$email'";
 
     //$result = mysqli_query($connect,$sql) or die ( mysqli_error($sql));
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
