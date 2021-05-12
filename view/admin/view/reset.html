@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+		<title>Reset Password</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/x-icon" href="../images/logo/logo.png">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="../css/styles.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner no-img">
+				<form action="../controllers/reset.php" method="POST" id="reset-form">
+					<h3>Reset Password</h3>
+					
+					<div class="form-holder left active">
+						<input type="password" placeholder="New Password" name="pass" id="pass" class="form-control">
+                    </div>
+                    <div class="form-holder left">
+						<input type="password" placeholder="Confirm Password" name="re_pass" id="re_pass" class="form-control">
+					</div>
+					<div class="form-login">
+						<button>Reset Password</button>
+                </form>
+                
+			</div>
+		</div>
+
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/main.js"></script>
+
+		<!-- JS -->
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<script src="../plugins/jquery/jquery-ui.min.js"></script>
+		<script src="../plugins/jquery/jquery.validate.js"></script>
+		<script src="../plugins/bootstrap.min.js"></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+		<script src="../js/reset.js"></script>
+
+	</body>
+</html>
