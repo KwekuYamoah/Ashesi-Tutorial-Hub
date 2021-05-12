@@ -31,12 +31,12 @@
                                     echo "null";}
                             ?>  href="courses.php">Courses</a></li>
                 <li><a class=<?php
-                                if($title == "Trainers|Ashesi Tutorial Hub"){
+                                if($title == "Submissions|Ashesi Tutorial Hub"){
                                     echo "active";
                                 }
                                 else{
                                     echo "null";}
-                            ?> href="trainers.php">Trainers</a></li>
+                            ?> href="tut_submission.php">Submissions</a></li>
                 <li><a class=<?php
                                 if($title == "Events|Ashesi Tutorial Hub"){
                                     echo "active";
