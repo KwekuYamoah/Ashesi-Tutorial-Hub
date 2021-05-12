@@ -52,12 +52,12 @@
 		</div>
 
 		<script src="./assets/js/jquery-3.3.1.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="./assets/js/log-main.js"></script>
 
 		 <!-- JS -->
 		<script src="./assets/vendor/jquery/jquery.min.js"></script>
 		<script src="./assets/vendor/jquery/jquery-ui.min.js"></script>
 		<script src="./assets/vendor/jquery/jquery.validate.js"></script>
-		<script src="js/login.js"></script>
+		<script src="./assets/js/login.js"></script>
 	</body>
 </html>
