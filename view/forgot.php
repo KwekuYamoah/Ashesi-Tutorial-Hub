@@ -6,8 +6,8 @@ if($_SERVER["REQUEST_METHOD"] =="POST"){
    
     $email = $_POST['email'];
 
-    //connecting kay71712022
-    //$connect = connect_db();
+    //connecting ashtutor
+    $connect = connect_db();
 
     $sql = "SELECT email FROM users WHERE email = '$email'";
 

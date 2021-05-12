@@ -1,9 +1,9 @@
 <?php
   $title = "Contact|Ashesi Tutorial Hub"; //title for header
   //include header which uses title
-  include_once("./inc/header.php");
+  include_once("../inc/header.php");
   //including navigation header
-  include_once("./inc/nav.php");
+  include_once("../inc/nav.php");
 ?>
 
   <main id="main">

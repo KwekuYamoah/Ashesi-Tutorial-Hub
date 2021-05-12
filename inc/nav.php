@@ -15,7 +15,7 @@
                                 }
                                 else{
                                     echo "null";}
-                            ?> href="index.php">Home</a></li>
+                            ?> href="home.php">Home</a></li>
                 <li><a class=<?php
                                 if($title == "About|Ashesi Tutorial Hub"){
                                     echo "active";

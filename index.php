@@ -1,8 +1,8 @@
 <?php
-   //include("config/connect_db.php");
+   include("model/connect_db.php");
    session_start();
 
-   //$db = connect_db();
+   $db = connect_db();
    
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form 
@@ -10,15 +10,16 @@
       $myemail = mysqli_real_escape_string($db,$_POST['email']);
 	  $mypassword = mysqli_real_escape_string($db,$_POST['pass']); 
       
-      $sql = "SELECT email, password FROM users WHERE email = '$myemail'";
+      $sql = "SELECT ashesi_mail,stud_password FROM students WHERE ashesi_mail = '$myemail'";
       $result = mysqli_query($db,$sql);
+      // If result matched $myemail and $mypassword, table row must be 1 row
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       
       $count = mysqli_num_rows($result);
       
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
-      if($count == 1 and password_verify($mypassword,$row["password"])) {
+      if($count == 1 and password_verify($mypassword,$row["stud_password"])) {
          
          $_SESSION['login_user'] = $myemail;
          

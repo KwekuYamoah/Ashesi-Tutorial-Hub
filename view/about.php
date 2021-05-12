@@ -1,9 +1,9 @@
 <?php
   $title = "About|Ashesi Tutorial Hub"; //title for header
   //include header which uses title
-  include_once("./inc/header.php");
+  include_once("../inc/header.php");
   //including navigation header
-  include_once("./inc/nav.php");
+  include_once("../inc/nav.php");
   
 ?>
 
@@ -22,7 +22,7 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/logo/cover.png" class="img-fluid" alt="">
+            <img src="../assets/img/logo/cover.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>Goals of the Hub</h3>
@@ -90,7 +90,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/Akua.jpg" class="testimonial-img" alt="">
+                  <img src="../assets/img/testimonials/Akua.jpg" class="testimonial-img" alt="">
                   <h3>Leonette</h3>
                   <h4>Computer Science'22</h4>
                   <p>
@@ -105,7 +105,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/tobbs.jpeg" class="testimonial-img" alt="">
+                  <img src="../assets/img/testimonials/tobbs.jpeg" class="testimonial-img" alt="">
                   <h3>Tobby</h3>
                   <h4>MIS'23</h4>
                   <p>
@@ -120,7 +120,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/Sula.jpeg" class="testimonial-img" alt="">
+                  <img src="../assets/img/testimonials/Sula.jpeg" class="testimonial-img" alt="">
                   <h3>Sula</h3>
                   <h4>CE'24</h4>
                   <p>
@@ -135,7 +135,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/dionne.jpeg" class="testimonial-img" alt="">
+                  <img src="../assets/img/testimonials/dionne.jpeg" class="testimonial-img" alt="">
                   <h3>Dionne</h3>
                   <h4>BA'22</h4>
                   <p>
@@ -150,7 +150,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/aisha.jpg" class="testimonial-img" alt="">
+                  <img src="../assets/img/testimonials/aisha.jpg" class="testimonial-img" alt="">
                   <h3>Aisha</h3>
                   <h4>EE'23</h4>
                   <p>
@@ -173,5 +173,5 @@
 
 <?php
   //include footer
-  include_once("./inc/footer.php");
+  include_once("../inc/footer.php");
 ?>

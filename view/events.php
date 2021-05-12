@@ -1,9 +1,9 @@
 <?php
 $title = 'Events|Ashesi Tutorial Hub'; //title for header
 //include header which uses title
-include_once './inc/header.php';
+include_once '../inc/header.php';
 //including navigation header
-include_once './inc/nav.php';
+include_once '../inc/nav.php';
 ?>
   <main id="main">
 
@@ -23,7 +23,7 @@ include_once './inc/nav.php';
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/events-1.jpg" alt="...">
+                <img src="../assets/img/events-1.jpg" alt="...">
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="">DSC meeting</a></h5>
@@ -35,7 +35,7 @@ include_once './inc/nav.php';
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/events-4.jpg" alt="...">
+                <img src="../assets/img/events-4.jpg" alt="...">
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="">Math tutorial</a></h5>
@@ -47,7 +47,7 @@ include_once './inc/nav.php';
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/events-3.jpg" alt="...">
+                <img src="../assets/img/events-3.jpg" alt="...">
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="">Writing center</a></h5>
@@ -59,7 +59,7 @@ include_once './inc/nav.php';
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/events-2.jpg" alt="...">
+                <img src="../assets/img/events-2.jpg" alt="...">
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="">Programming tutorial</a></h5>
@@ -76,4 +76,4 @@ include_once './inc/nav.php';
   </main><!-- End #main -->
 
 <?php //include footer
-include_once './inc/footer.php'; ?>
+include_once '../inc/footer.php'; ?>

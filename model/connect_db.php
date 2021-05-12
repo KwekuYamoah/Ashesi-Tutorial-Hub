@@ -1,5 +1,5 @@
 <?php 
-    require "../config/db_cred.php";
+    require "db_cred.php";
     //connects to a local dbms
     function connect_db(){
         // Creating connection
