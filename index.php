@@ -1,3 +1,47 @@
+<?php
+   include("config/connect_db.php");
+   session_start();
+
+   //$db = connect_db();
+   
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+      // username and password sent from form 
+      
+      $myemail = mysqli_real_escape_string($db,$_POST['email']);
+	  $mypassword = mysqli_real_escape_string($db,$_POST['pass']); 
+      
+      $sql = "SELECT email, password FROM users WHERE email = '$myemail'";
+      $result = mysqli_query($db,$sql);
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      
+      $count = mysqli_num_rows($result);
+      
+      // If result matched $myusername and $mypassword, table row must be 1 row
+		
+      if($count == 1 and password_verify($mypassword,$row["password"])) {
+         
+         $_SESSION['login_user'] = $myemail;
+         
+		 header("location: ./view/home.php");
+		 
+      }else {
+         $GLOBALS['error'] = '
+         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+         <script type="text/javascript"> 
+            setTimeout(function () {
+               swal({
+                  title: "Login Failed!",
+                  text: "Your username or password is invalid!",
+                  icon: "error",
+                  button: "Try again",
+              });
+            }, 2000);
+         
+            </script>';
+      }
+   }
+?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 	<head>
