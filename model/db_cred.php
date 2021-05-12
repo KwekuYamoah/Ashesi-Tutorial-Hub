@@ -6,16 +6,11 @@ $cleardb_username = $cleardb_url["user"];
 $cleardb_password = $cleardb_url["pass"];
 $cleardb_db = substr($cleardb_url["path"],1);
 
-$string=implode(",",$cleardb_url);
-echo $string;
-// Connect to DB
-$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-
 
 //databse credentials
-/*define("DATABASE", $cleardb_db);
+define("DATABASE", $cleardb_db);
 define("SERVER", $cleardb_server);
 define("USERNAME", $cleardb_username);
-define("PASSWD",$cleardb_password );*/
+define("PASSWD",$cleardb_password );
 
 ?>
