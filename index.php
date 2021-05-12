@@ -1,5 +1,5 @@
 <?php
-   include("config/connect_db.php");
+   //include("config/connect_db.php");
    session_start();
 
    //$db = connect_db();
@@ -81,7 +81,7 @@
 					</div>
 					<div class="form-login">
 						<button>Login</button>
-						<p>Don't Have an account? <a href="view\signup.html">Signup</a></p>
+						<p>Don't Have an account? <a href="view\signup.php">Signup</a></p>
 						
 					</div>
 				</form>
