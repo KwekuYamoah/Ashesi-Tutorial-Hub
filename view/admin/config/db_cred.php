@@ -1,6 +1,6 @@
 <?php
 //databse credentials
-define("DATABASE","KAY71712022");
+define("DATABASE","ASHTUTOR");
 define("SERVER","localhost");
 define("USERNAME","root");
 define("PASSWD",getenv("MYSQL_ROOT") ?? "");

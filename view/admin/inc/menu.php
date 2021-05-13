@@ -13,7 +13,7 @@
 								   <span class="mini-click-non">Home</span>
 								</a>
                             <ul class="submenu-angle" aria-expanded="true">
-                                <li><a title="Dashboard v.1" href="../index.php"><span class="mini-sub-pro">Welcome</span></a></li>
+                                <li><a title="Dashboard v.1" href="../view/index.php"><span class="mini-sub-pro">Welcome</span></a></li>
                                 <li><a title="Donors" href="../view/donors.php"><span class="mini-sub-pro">Donors</span></a></li>
                                 <li><a title="Analytics" href="../view/analytics.php"><span class="mini-sub-pro">Analytics</span></a></li>
                                

@@ -7,8 +7,8 @@ $title = isset($_POST['title']) ? $_POST['title'] : "";
 $start = isset($_POST['start']) ? $_POST['start'] : "";
 $end = isset($_POST['end']) ? $_POST['end'] : "";
 $goal = isset($_POST['goal']) ? $_POST['goal'] : "";
-$kayaid = 1;
-$sqlInsert = "INSERT INTO events (kayacare_id,event_date,event_name,event_goal) VALUES ('".$kayaid."','".$start."','".$title."','".$goal."')";
+
+$sqlInsert = "INSERT INTO events (event_date,event_name,event_goal) VALUES ('".$start."','".$title."','".$goal."')";
 
 $result = mysqli_query($connect, $sqlInsert);
 
