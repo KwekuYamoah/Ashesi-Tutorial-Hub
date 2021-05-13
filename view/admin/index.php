@@ -213,17 +213,17 @@
         <div class="library-book-area mg-t-30">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="single-cards-item">
                             <div class="single-product-image">
-                                <a href="#"><img src="./images/slide1.jpg" alt="Rose and Interns"></a>
+                                <a href="#"><img src="./images/ashesi-5.jpg" alt="@Ashesi"></a>
                             </div>
                             <div class="single-product-text">
-                                <img src="./images/rose.jpg" alt="Rose Dodd">
-                                <h4><a class="cards-hd-dn" href="https://www.linkedin.com/in/roseabadodd/" target="_blank">Rose Dodd</a></h4>
-                                <h5>Founder and Manager</h5>
-                                <p class="ctn-cards">Learner. Teacher. Creative. Passionate about improving social outcomes through business model design, and innovation! Proud Ashesi Grad 2009!</p>
-                                <a class="follow-cards" href="https://twitter.com/RSDodd" target="_blank">Follow</a>
+                                <img src="./images/ebo.jpg" alt="Ebo Yamoah">
+                                <h4><a class="cards-hd-dn" href="https://www.linkedin.com/in/roseabadodd/" target="_blank">Dr Adjepon-Yamoah</a></h4>
+                                <h5>Project Supervisor</h5>
+                                <p class="ctn-cards">Learner. Teacher. Creative. Passionate about improving social outcomes through business model design, and innovation! Software Engineering, Software/System Architecture, System Dependability Analysis, Cloud Computing and Web Technologies</p>
+                                <a class="follow-cards" href="https://www.linkedin.com/in/david-ebo-adjepon-yamoah-106a1951/" target="_blank">Follow</a>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                         <div class="cards-dtn">
@@ -247,27 +247,6 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <div class="single-product-item res-mg-t-30 table-mg-t-pro-n tb-sm-res-d-n dk-res-t-d-n">
-                            <div class="single-product-image">
-                                <a href="#"><img src="./images/slide2.jpg" alt="Kaya 2"></a>
-                            </div>
-                            <div class="single-product-text edu-pro-tx">
-                                <h4><a href="https://www.ashesi.org/portfolio-item/alumna-rose-dodd-09-on-creating-a-safe-space-for-the-children-of-kayayei/" target="_blank">Rose Dodd ’09: Creating safe spaces for children</a></h4>
-                                <h5>For most head porters (known as kayayoo, plural:kayayei) in Accra’s market places, after migrating from the rural areas.....</h5>
-                                
-                                <div class="product-buttons">
-                                    <button type="button" class="button-default cart-btn">
-                                     <a href="https://www.ashesi.org/portfolio-item/alumna-rose-dodd-09-on-creating-a-safe-space-for-the-children-of-kayayei/" style="text-decoration: none; color: white; font-size: 16px;">   Read More
-                                    </a>
-                                    </button>
-                                    <button type="button" class="button-default"><i class="fa fa-heart"></i></button>
-                                    <button type="button" class="button-default"><i class="fa fa-share"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -280,7 +259,7 @@
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <div class="actions graph-rp actions-graph-rp">
-                                            <img src="./images/Storyboard-2.jpg" alt="">
+                                            <img src="./images/ashesi-7.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -290,7 +269,7 @@
                                     <h5>
                                         <i class="fa fa-circle" style="color: #006DF0;">
                                         </i>
-                                        All smiles at Kaya 
+                                        Go Team!
                                     </h5>
                                     
                                 </li>
@@ -298,7 +277,7 @@
                             </ul>
                             <div id="morris-area-chart">
                                 <div class="add-product">
-                                        <a href="https://kayachildcare.org/" target="_blank">Visit Content Site</a>
+                                        <a href="https://ashesi-tutorial-hub.herokuapp.com/" target="_blank">Visit Content Site</a>
                                 </div>
                             </div>
                         </div>
@@ -359,7 +338,7 @@
         <div class="courses-area mg-b-15">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="white-box">
                             <h3 class="box-title">Browser Status</h3>
                             <ul class="basic-list">
@@ -373,65 +352,46 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="white-box res-mg-t-30 table-mg-t-pro-n">
-                            <h3 class="box-title">Visits from countries</h3>
+                            <h3 class="box-title">Visits from Ashesi Community</h3>
                             <ul class="country-state">
                                 <li>
-                                    <h2><span class="counter">1250</span></h2> <small>From Australia</small>
+                                    <h2><span class="counter">1250</span></h2> <small>From Accra</small>
                                     <div class="pull-right">75% <i class="fa fa-level-up text-danger ctn-ic-1"></i></div>
                                     <div class="progress">
                                         <div class="progress-bar progress-bar-danger ctn-vs-1" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:75%;"> <span class="sr-only">75% Complete</span></div>
                                     </div>
                                 </li>
                                 <li>
-                                    <h2><span class="counter">1050</span></h2> <small>From USA</small>
+                                    <h2><span class="counter">1050</span></h2> <small>From Outside Ghana</small>
                                     <div class="pull-right">48% <i class="fa fa-level-up text-success ctn-ic-2"></i></div>
                                     <div class="progress">
                                         <div class="progress-bar progress-bar-info ctn-vs-2" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:48%;"> <span class="sr-only">48% Complete</span></div>
                                     </div>
                                 </li>
                                 <li>
-                                    <h2><span class="counter">6350</span></h2> <small>From Canada</small>
+                                    <h2><span class="counter">6350</span></h2> <small>From Tema</small>
                                     <div class="pull-right">55% <i class="fa fa-level-up text-success ctn-ic-3"></i></div>
                                     <div class="progress">
                                         <div class="progress-bar progress-bar-success ctn-vs-3" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:55%;"> <span class="sr-only">55% Complete</span></div>
                                     </div>
                                 </li>
                                 <li>
-                                    <h2><span class="counter">950</span></h2> <small>From India</small>
+                                    <h2><span class="counter">950</span></h2> <small>From Takoradi</small>
                                     <div class="pull-right">33% <i class="fa fa-level-down text-success ctn-ic-4"></i></div>
                                     <div class="progress">
                                         <div class="progress-bar progress-bar-success ctn-vs-4" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:33%;"> <span class="sr-only">33% Complete</span></div>
                                     </div>
                                 </li>
                                 <li>
-                                    <h2><span class="counter">3250</span></h2> <small>From Bangladesh</small>
+                                    <h2><span class="counter">3250</span></h2> <small>From Tamale</small>
                                     <div class="pull-right">60% <i class="fa fa-level-up text-success ctn-ic-5"></i></div>
                                     <div class="progress">
                                         <div class="progress-bar progress-bar-inverse ctn-vs-5" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:60%;"> <span class="sr-only">60% Complete</span></div>
                                     </div>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="courses-inner res-mg-t-30 table-mg-t-pro-n tb-sm-res-d-n dk-res-t-d-n">
-                            <div class="courses-title">
-                                <a href="#"><img src="./images/volunteer.jpg" alt="Volunteer with Kids" /></a>
-                                <h2>Curriculum Development</h2>
-                            </div>
-                            <div class="courses-alaltic">
-                                <span class="cr-ic-r"><span class="course-icon"><i class="fa fa-clock"></i></span> 1 Year</span>
-                                <span class="cr-ic-r"><span class="course-icon"><i class="fa fa-heart"></i></span> 50</span>
-                                
-                            </div>
-                            <div class="course-des">
-                                <p><span><i class="fa fa-clock"></i></span> <b>Duration:</b> 6 Months</p>
-                                <p><span><i class="fa fa-clock"></i></span> <b>Created by:</b> Francis Ocran</p>
-                                <p><span><i class="fa fa-clock"></i></span> <b>Donor:</b> Ford Foundation</p>
-                            </div>
-                            
                         </div>
                     </div>
                 </div>
