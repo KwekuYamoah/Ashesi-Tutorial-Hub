@@ -1,7 +1,7 @@
 <?php
 class Records {	
    
-	private $recordsTable = 'staff'; //For staff table
+	private $recordsTable = 'video'; //For staff table
 	private $recordTable = 'records'; //For records table
 	private $cognitiveTable = "cognitive_data"; //For cognitive Table
 	private $healthTable = "health_data"; //For health table

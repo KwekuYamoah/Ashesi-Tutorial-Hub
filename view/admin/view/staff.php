@@ -59,17 +59,13 @@
                                         <thead>
                                             <tr>
                                                 
-                                                <th data-field="staff_id">Staff ID</th>
-                                                <th data-field="kayacare_id" >Kaya ID</th>
-                                                <th data-field="fname" data-editable="true">First Name</th>
-                                                <th data-field="mname"data-editable="true" >Middle Name</th>
-                                                <th data-field="lname" data-editable="true">Last Name</th>
-                                                <th data-field="email" data-editable="true" >Email</th>
-                                                <th data-field="phone" data-editable="true">Phone</th>
-                                                <th data-field="address" data-editable="true">Address</th>
-                                                <th data-field="dob" data-editable="true">DOB</th>
-                                                <th data-field="sex" data-editable="true">Sex</th>
-                                                <th data-field="delete">Delete</th>
+                                                <th data-field="vidId">Video ID</th>
+                                                <th data-field="author">First Name</th>
+                                                <th data-field="dateCreated"data-editable="true" >Date Uploaded</th>
+                                                <th data-field="vidTopic" data-editable="true">Topic</th>
+                                                <th data-field="numViews" data-editable="true" >Views</th>
+                                                <th data-field="rating" data-editable="true">Rating</th>
+                                                <th data-field="delete">Approved</th>
                                             </tr>
                                         </thead>
                                         <tbody id="staff"></tbody>
