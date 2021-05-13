@@ -1,6 +1,6 @@
 <?php
 
-    $title = "Staff|Kaya Store"; //title for header
+    $title = "Vids|Ash Hub"; //title for header
 
    //include header which uses title
    include_once("../inc/header.php");
@@ -24,9 +24,7 @@
                             <div class="sparkline13-hd">
                                 <div class="main-sparkline13-hd">
                                     <h1>Projects <span class="table-project-n">Data</span> Table</h1>
-                                    <div class="add-product">
-                                        <a href="add-staff.php">Add Staff</a>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="sparkline13-graph">
@@ -65,7 +63,7 @@
                                                 <th data-field="vidTopic" data-editable="true">Topic</th>
                                                 <th data-field="numViews" data-editable="true" >Views</th>
                                                 <th data-field="rating" data-editable="true">Rating</th>
-                                                <th data-field="delete">Approved</th>
+                                                <th data-field="approved" data-editable="true">Approved?</th>
                                             </tr>
                                         </thead>
                                         <tbody id="staff"></tbody>

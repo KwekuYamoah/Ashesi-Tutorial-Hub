@@ -1,20 +1,20 @@
 <?php
 class Records {	
    
-	private $recordsTable = 'video'; //For staff table
+	private $videoTable = 'video'; //For staff table
 	private $recordTable = 'records'; //For records table
 	private $cognitiveTable = "cognitive_data"; //For cognitive Table
 	private $healthTable = "health_data"; //For health table
 	private $nutritionTable = "nutrition_data"; //For nutrition table
 	private $commentTable = "comments"; //For donors table
-	public $staff_id;
+	public $vidId;
 	public $kayacare_id;
-	public $fname;
-	public $mname;
-	public $lname;
-	public $email;
-	public $phone;
-    public $address;
+	public $author;
+	public $dateCreated;
+	public $vidTopic;
+	public $numViews;
+	public $rating;
+    public $approved;
 	public $dob;
 	public $sex;
 	private $conn;
@@ -23,18 +23,17 @@ class Records {
         $this->conn = $db;
     }	    
 	
-	public function listStaff(){
+	public function listVideo(){
 		
-		$sqlQuery = "SELECT * FROM ".$this->recordsTable." ";
+		$sqlQuery = "SELECT * FROM ".$this->videoTable." ";
 		if(!empty($_POST["search"]["value"])){
-			$sqlQuery .= 'where(staff_id LIKE "%'.$_POST["search"]["value"].'%" ';
-			$sqlQuery .= ' OR kayacare_id LIKE "%'.$_POST["search"]["value"].'%" ';			
-			$sqlQuery .= ' OR fname LIKE "%'.$_POST["search"]["value"].'%" ';
-			$sqlQuery .= ' OR mname LIKE "%'.$_POST["search"]["value"].'%" ';
-			$sqlQuery .= ' OR lname LIKE "%'.$_POST["search"]["value"].'%") ';	
-			$sqlQuery .= ' OR email LIKE "%'.$_POST["search"]["value"].'%") ';
-			$sqlQuery .= ' OR phone LIKE "%'.$_POST["search"]["value"].'%") ';	
-			$sqlQuery .= ' OR address LIKE "%'.$_POST["search"]["value"].'%") ';
+			$sqlQuery .= 'where(vidId LIKE "%'.$_POST["search"]["value"].'%" ';			
+			$sqlQuery .= ' OR author LIKE "%'.$_POST["search"]["value"].'%" ';
+			$sqlQuery .= ' OR dateCreated LIKE "%'.$_POST["search"]["value"].'%" ';
+			$sqlQuery .= ' OR vidTopic LIKE "%'.$_POST["search"]["value"].'%") ';	
+			$sqlQuery .= ' OR numViews LIKE "%'.$_POST["search"]["value"].'%") ';
+			$sqlQuery .= ' OR rating LIKE "%'.$_POST["search"]["value"].'%") ';	
+			$sqlQuery .= ' OR approved LIKE "%'.$_POST["search"]["value"].'%") ';
 			$sqlQuery .= ' OR dob LIKE "%'.$_POST["search"]["value"].'%") ';	
 			$sqlQuery .= ' OR sex LIKE "%'.$_POST["search"]["value"].'%") ';
 		}
@@ -45,7 +44,7 @@ class Records {
 		$stmt->execute();
 		$result = $stmt->get_result();	
 		
-		$stmtTotal = $this->conn->prepare("SELECT * FROM ".$this->recordsTable);
+		$stmtTotal = $this->conn->prepare("SELECT * FROM ".$this->videoTable);
 		$stmtTotal->execute();
 		$allResult = $stmtTotal->get_result();
 		$allRecords = $allResult->num_rows;
@@ -54,18 +53,13 @@ class Records {
 		$records = array();		
 		while ($record = $result->fetch_assoc()) { 				
 			$records[] = array(
-				'staff_id' => $record['staff_id'],
-				'kayacare_id' => $record['kayacare_id'],
-				'fname' => $record['fname'],
-				'mname' => $record['mname'],
-				'lname' => $record['lname'],
-				'email' => $record['email'],
-				'phone' => $record['phone'],
-				'address' => $record['address'],
-				'dob' => $record['dob'],
-				'sex' => $record['sex'],
-				'delete' => '<button type="button" name="delete" id="'.$record["staff_id"].'"
-				class="btn btn-danger btn-xs delete">Delete <a href="event.php" style="text-decoration:none;"></button>'
+				'vidId' => $record['vidId'],
+				'author' => $record['author'],
+				'dateCreated' => $record['dateCreated'],
+				'vidTopic' => $record['vidTopic'],
+				'numViews' => $record['numViews'],
+				'rating' => $record['rating'],
+				'approved' => $record['approved'],
 			);			
 		}
 		echo json_encode($records);

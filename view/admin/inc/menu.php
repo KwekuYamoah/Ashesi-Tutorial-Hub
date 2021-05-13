@@ -23,27 +23,11 @@
                             <a title="Landing Page" href="../view/event.php" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Event</span></a>
                         </li>
                         <li>
-                            <a class="has-arrow" href="../view/staff.php" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Staff</span></a>
+                            <a class="has-arrow" href="../view/video.php" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Tutorials</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Staff" href="../view/staff.php"><span class="mini-sub-pro">All Staff</span></a></li>
-                                <li><a title="Add Staff" href="../view/add-staff.php"><span class="mini-sub-pro">Add Staff</span></a></li>
+                                <li><a title="All Staff" href="../view/video.php"><span class="mini-sub-pro">All Tuts</span></a></li>
+                                
         
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="../view/bene.php" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Beneficiaries</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Beneficiaries" href="../view/bene.php"><span class="mini-sub-pro">All Beneficiaries</span></a></li>
-                                <li><a title="Add Beneficiary" href="../view/add-bene.php"><span class="mini-sub-pro">Add Beneficiaries</span></a></li>
-                                
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="../view/record.php" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Records</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Records" href="../view/record.php"><span class="mini-sub-pro">All Records</span></a></li>
-                                <li><a title="Add Records" href="../view/add-records.php"><span class="mini-sub-pro">Add Records</span></a></li>
-                                
                             </ul>
                         </li>
                         

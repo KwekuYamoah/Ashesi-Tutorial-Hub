@@ -1,7 +1,7 @@
 $(document).ready(function(){
     //Display records for all staff
     $('#table').bootstrapTable({
-        url: '../controllers/ajax_action.php',
+        url: '../controllers/list-video.php',
         pagination: true,
         search: true,
         toggle:"table"
