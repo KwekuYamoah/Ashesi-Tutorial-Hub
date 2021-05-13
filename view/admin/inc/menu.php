@@ -1,19 +1,19 @@
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
-                <a href="index.html"><img class="main-logo" src="./images/logo/logo.png" alt="Centre Logo" /></a>
-                <strong><a href="index.html"><img src="./images/logo/logo.png" alt="Centre Logo" /></a></strong>
+                <a href="index.php"><img class="main-logo" src="./images/logo/logo.png" alt="Centre Logo" /></a>
+                <strong><a href="index.php"><img src="./images/logo/logo.png" alt="Centre Logo" /></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
                 <nav class="sidebar-nav left-sidebar-menu-pro">
                     <ul class="metismenu" id="menu1">
                         <li class="active">
-                            <a class="has-arrow" href="index.html">
+                            <a class="has-arrow" href="index.php">
 								   <span class="educate-icon educate-home icon-wrap"></span>
 								   <span class="mini-click-non">Home</span>
 								</a>
                             <ul class="submenu-angle" aria-expanded="true">
-                                <li><a title="Dashboard v.1" href="./view/index.php"><span class="mini-sub-pro">Welcome</span></a></li>
+                                <li><a title="Dashboard v.1" href="./index.php"><span class="mini-sub-pro">Welcome</span></a></li>
                                 <li><a title="Donors" href="./view/donors.php"><span class="mini-sub-pro">Donors</span></a></li>
                                 <li><a title="Analytics" href="analytics.php"><span class="mini-sub-pro">Analytics</span></a></li>
                                

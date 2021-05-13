@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="logo-pro">
-                        <a href="./view/index.php"><img class="main-logo" src="./img/logo/logo.png" alt="" /></a>
+                        <a href="./index.php"><img class="main-logo" src="./img/logo/logo.png" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                                     <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
                                         <div class="header-top-menu tabl-d-n">
                                             <ul class="nav navbar-nav mai-top-nav">
-                                                <li class="nav-item"><a href="./view/index.php" class="nav-link">Home</a>
+                                                <li class="nav-item"><a href="./index.php" class="nav-link">Home</a>
                                                 </li>
                                                 <li class="nav-item"><a href="#" class="nav-link">About</a>
                                                 </li>
@@ -168,7 +168,7 @@
                                                 <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
 															<img src="./img/product/pro4.jpg" alt="" />
-															<span class="admin-name"><?php echo $login_session; ?></span>
+															<span class="admin-name"><?php echo "Ash Hub Admin"; ?></span>
 															<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
 														</a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">

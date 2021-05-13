@@ -122,7 +122,7 @@
                                 </li>
                             </ul>
                             <div id="extra-area-chart" style="height: 356px;">
-                                <img src="./images/slide3.jpg" alt="Working Kaya">
+                                <img src="./images/ashesi-1.jpg" alt="Working Kaya">
                             </div>
                         </div>
                     </div>
