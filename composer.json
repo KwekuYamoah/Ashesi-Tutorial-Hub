@@ -1,6 +1,7 @@
 {
     "require": {
       "ext-mysqli": "*",
-        "php-ai/php-ml": "^0.4.1"
+        "php-ai/php-ml": "^0.4.1",
+        "davmixcool/php-sentiment-analyzer": "^1.2"
     }
   }
