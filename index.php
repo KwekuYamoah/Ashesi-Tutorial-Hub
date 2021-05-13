@@ -24,7 +24,7 @@
          $_SESSION['login_user'] = $myemail;
 
 		 if($row['role'] == 'admin'){
-			 header("location: ./view/admin");
+			 header("location: ./view/admin/view");
 		 }
 		 else{
 			header("location: ./view/home.php");

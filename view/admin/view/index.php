@@ -3,19 +3,19 @@
     $title = "Admin |Ash Hub"; //title for header
 
     //include header which uses title
-    include_once("inc/header.php");
+    include_once("../inc/header.php");
 
     //include left-side menu 
-    include_once("inc/menu.php");
+    include_once("../inc/menu.php");
 
     //including navigation header
-    include_once("inc/nav.php");
+    include_once("../inc/nav.php");
 
     //include mobile device styling
-    include_once("inc/mobile.php");
+    include_once("../inc/mobile.php");
 
     //Connect to database
-    @require_once("config/db.php");
+    @require_once("../config/db.php");
     
     $db = new DB();
     $parent = $db->get_bene_insight();
@@ -122,7 +122,7 @@
                                 </li>
                             </ul>
                             <div id="extra-area-chart" style="height: 356px;">
-                                <img src="./images/ashesi-1.jpg" alt="Working Kaya">
+                                <img src="../images/ashesi-1.jpg" alt="Working Kaya">
                             </div>
                         </div>
                     </div>
@@ -216,10 +216,10 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="single-cards-item">
                             <div class="single-product-image">
-                                <a href="#"><img src="./images/ashesi-5.jpg" alt="@Ashesi"></a>
+                                <a href="#"><img src="../images/ashesi-5.jpg" alt="@Ashesi"></a>
                             </div>
                             <div class="single-product-text">
-                                <img src="./images/ebo.jpg" alt="Ebo Yamoah">
+                                <img src="../images/ebo.jpg" alt="Ebo Yamoah">
                                 <h4><a class="cards-hd-dn" href="https://www.linkedin.com/in/roseabadodd/" target="_blank">Dr Adjepon-Yamoah</a></h4>
                                 <h5>Project Supervisor</h5>
                                 <p class="ctn-cards">Learner. Teacher. Creative. Passionate about improving social outcomes through business model design, and innovation! Software Engineering, Software/System Architecture, System Dependability Analysis, Cloud Computing and Web Technologies</p>
@@ -259,7 +259,7 @@
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <div class="actions graph-rp actions-graph-rp">
-                                            <img src="./images/ashesi-7.jpg" alt="">
+                                            <img src="../images/ashesi-7.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -400,5 +400,5 @@
 
 <?php
     //include footer
-    include_once("inc/footer.php");
+    include_once("../inc/footer.php");
 ?>

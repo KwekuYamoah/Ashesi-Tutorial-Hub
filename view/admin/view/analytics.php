@@ -6,13 +6,13 @@
     include_once("../inc/header.php");
 
     //include left-side menu 
-    include_once("../inc/menu.php");
+    include_once("./inc/menu.php");
 
     //including navigation header
-    include_once("../inc/nav.php");
+    include_once("./inc/nav.php");
 
     //include mobile device styling
-    include_once("../inc/mobile.php");
+    include_once("./inc/mobile.php");
 
 ?>
 <!-- Single pro tab start-->
@@ -242,5 +242,5 @@
         </div>
 <?php
     //include footer
-    include_once("../inc/footer.php");
+    include_once("./inc/footer.php");
 ?>
