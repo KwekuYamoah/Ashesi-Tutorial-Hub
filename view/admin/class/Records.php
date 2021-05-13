@@ -30,7 +30,8 @@ class Records {
 			$sqlQuery .= 'where(vidId LIKE "%'.$_POST["search"]["value"].'%" ';			
 			$sqlQuery .= ' OR author LIKE "%'.$_POST["search"]["value"].'%" ';
 			$sqlQuery .= ' OR dateCreated LIKE "%'.$_POST["search"]["value"].'%" ';
-			$sqlQuery .= ' OR vidTopic LIKE "%'.$_POST["search"]["value"].'%") ';	
+			$sqlQuery .= ' OR vidTopic LIKE "%'.$_POST["search"]["value"].'%") ';
+			$sqlQuery .= ' OR vidUrl LIKE "%'.$_POST["search"]["value"].'%") ';		
 			$sqlQuery .= ' OR numViews LIKE "%'.$_POST["search"]["value"].'%") ';
 			$sqlQuery .= ' OR rating LIKE "%'.$_POST["search"]["value"].'%") ';	
 			$sqlQuery .= ' OR approved LIKE "%'.$_POST["search"]["value"].'%") ';
@@ -57,6 +58,7 @@ class Records {
 				'author' => $record['author'],
 				'dateCreated' => $record['dateCreated'],
 				'vidTopic' => $record['vidTopic'],
+				'vidUrl' => $record['vidUrl'],
 				'numViews' => $record['numViews'],
 				'rating' => $record['rating'],
 				'approved' => $record['approved'],

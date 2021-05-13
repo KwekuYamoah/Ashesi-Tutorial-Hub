@@ -58,9 +58,10 @@
                                             <tr>
                                                 
                                                 <th data-field="vidId">Video ID</th>
-                                                <th data-field="author">First Name</th>
+                                                <th data-field="author">Author ID</th>
                                                 <th data-field="dateCreated"data-editable="true" >Date Uploaded</th>
                                                 <th data-field="vidTopic" data-editable="true">Topic</th>
+                                                <th data-field="vidUrl" data-editable="true">URL</th>
                                                 <th data-field="numViews" data-editable="true" >Views</th>
                                                 <th data-field="rating" data-editable="true">Rating</th>
                                                 <th data-field="approved" data-editable="true">Approved?</th>
