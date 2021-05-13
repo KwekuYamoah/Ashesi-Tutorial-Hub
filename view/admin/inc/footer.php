@@ -4,7 +4,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer-copy-right">
-                            <p>Copyright © 2020 Kaya ChildCare Centre. All rights reserved.</p>
+                            <p>Copyright © 2021 Ashesi Tutorial Hub. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
