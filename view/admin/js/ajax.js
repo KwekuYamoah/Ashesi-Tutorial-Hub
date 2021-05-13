@@ -41,7 +41,7 @@ $(document).ready(function(){
 
     //Displaying records for donors
     $('#table-donor').bootstrapTable({
-        url: '../controllers/list-donor.php',
+        url: '../controllers/list-comments.php',
         pagination: true,
         search: true,
         toggle:"table"

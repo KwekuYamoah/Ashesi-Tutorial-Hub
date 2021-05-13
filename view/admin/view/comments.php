@@ -1,6 +1,6 @@
 <?php
 
-    $title = "Donors |Kaya Store"; //title for header
+    $title = "Reviews |Ash Hub"; //title for header
 
      //include header which uses title
     include_once("../inc/header.php");
@@ -56,11 +56,11 @@
                                         >
                                         <thead>
                                             <tr>
-                                                
-                                            <th data-field="name">Name</th>
-                                            <th data-field="address">Address</th>
-                                            <th data-field="phone" >Phone</th>
-                                            <th data-field="nature">Nature of Donation</th>
+                                            
+                                            <th data-field="author">Author</th>
+                                            <th data-field="dateCreated">Date</th>
+                                            <th data-field="label" >Sentiment</th>
+                                            <th data-field="vidID">Video ID</th>
                                             </tr>
                                         </thead>
                                         <tbody id="staff"></tbody>

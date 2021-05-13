@@ -9,7 +9,7 @@ $db = $database->getConnection();
 $record = new Records($db);
 
 if(isset($_POST)){
-    $record->listDonors();
+    $record->listComments();
     
 }
 ?>

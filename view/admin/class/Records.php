@@ -6,7 +6,7 @@ class Records {
 	private $cognitiveTable = "cognitive_data"; //For cognitive Table
 	private $healthTable = "health_data"; //For health table
 	private $nutritionTable = "nutrition_data"; //For nutrition table
-	private $donorTable = "donors"; //For donors table
+	private $commentTable = "comments"; //For donors table
 	public $staff_id;
 	public $kayacare_id;
 	public $fname;
@@ -111,13 +111,14 @@ class Records {
 	}
 
 	
-	public function listDonors(){
-		$sqlQuery = "SELECT * FROM ".$this->donorTable." ";
+	public function listComments(){
+		$sqlQuery = "SELECT * FROM ".$this->commentTable." ";
+					
 		if(!empty($_POST["search"]["value"])){
-			$sqlQuery .= 'where(name LIKE "%'.$_POST["search"]["value"].'%" ';
-			$sqlQuery .= ' OR address LIKE "%'.$_POST["search"]["value"].'%" ';			
-			$sqlQuery .= ' OR phone LIKE "%'.$_POST["search"]["value"].'%" ';
-			$sqlQuery .= ' OR nature LIKE "%'.$_POST["search"]["value"].'%" ';
+			$sqlQuery .= 'where(author LIKE "%'.$_POST["search"]["value"].'%" ';
+			$sqlQuery .= ' OR dateCreated LIKE "%'.$_POST["search"]["value"].'%" ';			
+			$sqlQuery .= ' OR label LIKE "%'.$_POST["search"]["value"].'%" ';
+			$sqlQuery .= ' OR vidID LIKE "%'.$_POST["search"]["value"].'%" ';
 			
 		}
 		
@@ -127,7 +128,7 @@ class Records {
 		$stmt->execute();
 		$result = $stmt->get_result();	
 		
-		$stmtTotal = $this->conn->prepare("SELECT * FROM ".$this->donorTable);
+		$stmtTotal = $this->conn->prepare("SELECT * FROM ".$this->commentTable);
 		$stmtTotal->execute();
 		$allResult = $stmtTotal->get_result();
 		$allRecords = $allResult->num_rows;
@@ -136,10 +137,10 @@ class Records {
 		$records = array();		
 		while ($record = $result->fetch_assoc()) { 				
 			$records[] = array(
-				'name' => $record['name'],
-				'address' => $record['address'],
-				'phone' => $record['phone'],
-				'nature' => $record['nature']
+				'author' => $record['author'],
+				'dateCreated' => $record['dateCreated'],
+				'label' => $record['label'],
+				'vidID' => $record['vidID']
 			);			
 		}
 		echo json_encode($records);
