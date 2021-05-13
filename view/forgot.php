@@ -9,7 +9,7 @@ if($_SERVER["REQUEST_METHOD"] =="POST"){
     //connecting ashtutor
     $connect = connect_db();
 
-    $sql = "SELECT ashesi_mail FROM students WHERE ashesi_mail = '$email'";
+    $sql = "SELECT email FROM users WHERE email = '$email'";
 
     $result = mysqli_query($connect,$sql) or die ( mysqli_error($connect));
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);

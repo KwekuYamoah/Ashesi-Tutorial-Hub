@@ -46,7 +46,7 @@ CREATE TABLE `users` (
   `fName` varchar(50) DEFAULT NULL,
   `lName` varchar(50) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `pwd` varchar(16) DEFAULT NULL,
+  `pwd` varchar(255) DEFAULT NULL,
   `phone` varchar(32) DEFAULT NULL,
   `role` enum('student','admin') DEFAULT 'student'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

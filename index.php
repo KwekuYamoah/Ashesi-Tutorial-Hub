@@ -10,7 +10,7 @@
       $myemail = mysqli_real_escape_string($db,$_POST['email']);
 	  $mypassword = mysqli_real_escape_string($db,$_POST['pass']); 
       
-      $sql = "SELECT ashesi_mail,stud_password FROM students WHERE ashesi_mail = '$myemail'";
+      $sql = "SELECT email,pwd,role FROM users WHERE email = '$myemail'";
       $result = mysqli_query($db,$sql);
       // If result matched $myemail and $mypassword, table row must be 1 row
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
@@ -19,11 +19,16 @@
       
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
-      if($count == 1 and password_verify($mypassword,$row["stud_password"])) {
+      if($count == 1 and password_verify($mypassword,$row["pwd"])) {
          
          $_SESSION['login_user'] = $myemail;
-         
-		 header("location: ./view/home.php");
+
+		 if($row['role'] == 'admin'){
+			 header("location: ./view/admin");
+		 }
+		 else{
+			header("location: ./view/home.php");
+		 } 
 		 
       }else {
          $GLOBALS['error'] = '

@@ -10,7 +10,7 @@ if($_SERVER["REQUEST_METHOD"] =="POST"){
     //connecting ashtutor
     $connect = connect_db();
 
-    $sql_query = "INSERT INTO students (firstname, lastname, ashesi_mail, stud_password) VALUES ('$f_name', '$l_name','$email', '$password')";
+    $sql_query = "INSERT INTO users (fName, lName, email, pwd) VALUES ('$f_name', '$l_name','$email', '$password')";
     $insertion = mysqli_query($connect, $sql_query);
     if($insertion){
         header("location: ../index.php");
