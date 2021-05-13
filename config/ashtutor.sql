@@ -3,16 +3,12 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 12, 2021 at 07:38 AM
+-- Generation Time: May 13, 2021 at 12:04 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
--- DROP DATABASE IF EXISTS ASHTUTOR;
--- CREATE SCHEMA ASHTUTOR;
--- USE ASHTUTOR;
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;3
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -21,42 +17,54 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
-
 --
--- Database: `ashtutor`
+-- Database: `ashhub`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Table structure for table `comments`
 --
 
-CREATE TABLE `admin` (
-  `AdminID` int(11) NOT NULL,
-  `email` varchar(50) DEFAULT NULL,
-  `admin_password` varchar(225) DEFAULT NULL
+CREATE TABLE `comments` (
+  `commentID` int(12) NOT NULL,
+  `author` int(6) DEFAULT NULL,
+  `dateCreated` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `label` enum('0','1') DEFAULT NULL,
+  `vidID` int(12) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `admin`
+-- Table structure for table `users`
 --
 
-INSERT INTO `admin` (`AdminID`, `email`, `admin_password`) VALUES
-(1, 'admin-hub@ashesi.edu.gh', '90a0d3a7a53a5f687f21c37acd07a495');
+CREATE TABLE `users` (
+  `userID` int(6) NOT NULL,
+  `fName` varchar(50) DEFAULT NULL,
+  `lName` varchar(50) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `pwd` varchar(16) DEFAULT NULL,
+  `phone` varchar(32) DEFAULT NULL,
+  `role` enum('student','admin') DEFAULT 'student'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `students`
+-- Table structure for table `video`
 --
 
-CREATE TABLE `students` (
-  `StudID` int(11) NOT NULL,
-  `firstname` varchar(100) DEFAULT NULL,
-  `lastname` varchar(100) DEFAULT NULL,
-  `ashesi_mail` varchar(225) DEFAULT NULL,
-  `stud_password` varchar(225) DEFAULT NULL
+CREATE TABLE `video` (
+  `vidId` int(12) NOT NULL,
+  `author` int(6) DEFAULT NULL,
+  `dateCreated` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `vidTopic` tinytext DEFAULT NULL,
+  `numViews` int(12) DEFAULT NULL,
+  `rating` decimal(7,5) DEFAULT NULL,
+  `approved` enum('yes','no') DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -64,32 +72,64 @@ CREATE TABLE `students` (
 --
 
 --
--- Indexes for table `admin`
+-- Indexes for table `comments`
 --
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`AdminID`);
+ALTER TABLE `comments`
+  ADD PRIMARY KEY (`commentID`),
+  ADD KEY `vidID` (`vidID`),
+  ADD KEY `author` (`author`);
 
 --
--- Indexes for table `students`
+-- Indexes for table `users`
 --
-ALTER TABLE `students`
-  ADD PRIMARY KEY (`StudID`);
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`userID`);
+
+--
+-- Indexes for table `video`
+--
+ALTER TABLE `video`
+  ADD PRIMARY KEY (`vidId`),
+  ADD KEY `author` (`author`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `admin`
+-- AUTO_INCREMENT for table `comments`
 --
-ALTER TABLE `admin`
-  MODIFY `AdminID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `comments`
+  MODIFY `commentID` int(12) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `students`
+-- AUTO_INCREMENT for table `users`
 --
-ALTER TABLE `students`
-  MODIFY `StudID` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `users`
+  MODIFY `userID` int(6) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `video`
+--
+ALTER TABLE `video`
+  MODIFY `vidId` int(12) NOT NULL AUTO_INCREMENT;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `comments`
+--
+ALTER TABLE `comments`
+  ADD CONSTRAINT `comments_ibfk_1` FOREIGN KEY (`vidID`) REFERENCES `video` (`vidId`),
+  ADD CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`author`) REFERENCES `users` (`userID`);
+
+--
+-- Constraints for table `video`
+--
+ALTER TABLE `video`
+  ADD CONSTRAINT `video_ibfk_1` FOREIGN KEY (`author`) REFERENCES `users` (`userID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

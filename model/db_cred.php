@@ -8,9 +8,9 @@ $cleardb_db = substr($cleardb_url["path"],1);
 
 
 //databse credentials
-define("DATABASE", $cleardb_db);
-define("SERVER", $cleardb_server);
-define("USERNAME", $cleardb_username);
-define("PASSWD",$cleardb_password );
+define("DATABASE", $cleardb_db ?? "ASHTUTOR");
+define("SERVER", $cleardb_server ?? "localhost");
+define("USERNAME", $cleardb_username ?? "root");
+define("PASSWD",$cleardb_password ?? "" );
 
 ?>
