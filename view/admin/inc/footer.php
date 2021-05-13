@@ -99,10 +99,7 @@
     <!-- main JS
 		============================================ -->
     <script src="../js/main-1.js"></script>
-    <!-- tawk chat JS
-		============================================ -->
-    <script src="../js/tawk-chat.js"></script>
-
+    
     <!--Sweet Alert--->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 

@@ -14,14 +14,7 @@
     //include mobile device styling
     include_once("../inc/mobile.php");
 
-    //Connect to database
-    @require_once("../config/db.php");
     
-    $db = new DB();
-    $parent = $db->get_bene_insight();
-    $staff = $db -> get_staff_insight();
-    $dev_gap = $db -> get_dev_insight();
-    $donors = $db -> get_donor_insight();
 
 ?>       
         
