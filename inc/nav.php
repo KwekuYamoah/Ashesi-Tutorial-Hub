@@ -46,8 +46,7 @@
                             ?> href="events.php">Events</a></li>
                 
 
-                <li><a href="../controller/logout.php"><span>Log Out</span> <i class="bi bi-chevron-down"></i></a>
-                </li>
+                
             <li><a class=<?php
                                 if($title == "Contact|Ashesi Tutorial Hub"){
                                     echo "active";
@@ -55,6 +54,8 @@
                                 else{
                                     echo "null";}
                             ?> href="contact.php">Contact</a></li>
+            <li><a href="../controller/logout.php"><span>Log Out</span> <i class="bi bi-chevron-down"></i></a>
+                </li>
             </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->

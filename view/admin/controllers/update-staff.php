@@ -4,25 +4,23 @@
     $connect = connect_db(); //establishing a connection to db
 
     //Updating records for staff table
-    if(isset($_POST["fname"])){
-        $staff_id = $_POST["staff_id"];
-        $kayacare_id = mysqli_real_escape_string($connect,$_POST["kayacare_id"]);
-        $fname = mysqli_real_escape_string($connect,$_POST["fname"]);
-        $mname = mysqli_real_escape_string($connect,$_POST["mname"]);
-        $lname = mysqli_real_escape_string($connect,$_POST["lname"]);
-        $email = mysqli_real_escape_string($connect,$_POST["email"]);
-        $phone = mysqli_real_escape_string($connect,$_POST["phone"]);
-        $address = mysqli_real_escape_string($connect,$_POST["address"]);
-        $dob = mysqli_real_escape_string($connect,$_POST["dob"]);
-        $sex = mysqli_real_escape_string($connect,$_POST["sex"]);
+    if(isset($_POST["author"])){
+        $vidId = $_POST["vidId"];
+        $author = mysqli_real_escape_string($connect,$_POST["author"]);
+        $dateCreated = mysqli_real_escape_string($connect,$_POST["dateCreated"]);
+        $vidTopic = mysqli_real_escape_string($connect,$_POST["vidTopic"]);
+        $vidUrl = mysqli_real_escape_string($connect,$_POST["vidUrl"]);
+        $numViews = mysqli_real_escape_string($connect,$_POST["numViews"]);
+        $rating = mysqli_real_escape_string($connect,$_POST["rating"]);
+        $approved = mysqli_real_escape_string($connect,$_POST["approved"]);
     
        
         var_dump($_POST);
     
-        $sqlUpdate = "UPDATE staff SET kayacare_id ='$kayacare_id',fname='$fname',mname='$mname',lname='$lname',email='$email',phone='$phone',address='$address',dob='$dob', sex='$sex' WHERE staff_id='$staff_id'";
+        $sqlUpdate = "UPDATE video SET author='$author',dateCreated='$dateCreated',vidTopic='$vidTopic',vidUrl='$vidUrl',numViews='$numViews',rating='$rating',approved='$approved' WHERE vidId='$vidId'";
     
         if(mysqli_query($connect, $sqlUpdate)){
-            echo $staff_id;
+            echo $vidId;
             echo "Record updated successfully";
         }
         else {

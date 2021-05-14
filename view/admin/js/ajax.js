@@ -106,7 +106,7 @@ $(document).ready(function(){
         setTimeout(function () {		
             var request= $.ajax({
                 url: '../controllers/update-staff.php',
-                data: {staff_id : row.staff_id ,kayacare_id: row.kayacare_id, fname: row.fname, mname: row.mname, lname:row.lname,email: row.email, phone: row.phone, address:row.address, dob: row.dob, sex: row.sex},
+                data: {vidId : row.vidId , author: row.author, dateCreated: row.dateCreated, vidTopic:row.vidTopic,vidUrl: row.vidUrl, numViews: row.numViews, rating:row.rating, approved: row.approved},
                 
                 encode: true,
                 type: "POST",
