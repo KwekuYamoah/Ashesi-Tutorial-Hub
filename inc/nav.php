@@ -46,7 +46,7 @@
                             ?> href="events.php">Events</a></li>
                 
 
-                <li class="dropdown"><a href="../controller/logout.php"><span>Log Out</span> <i class="bi bi-chevron-down"></i></a>
+                <li><a href="../controller/logout.php"><span>Log Out</span> <i class="bi bi-chevron-down"></i></a>
                 </li>
             <li><a class=<?php
                                 if($title == "Contact|Ashesi Tutorial Hub"){
