@@ -47,8 +47,6 @@
             </div> <!-- End Course Item-->';
             }
           ?>
-
-
           
 
         </div>

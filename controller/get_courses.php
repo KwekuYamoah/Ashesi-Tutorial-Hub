@@ -5,14 +5,15 @@ session_start();
     function json_courses(){
         $db = connect_db();
 
-        $sql = "SELECT vidTopic,vidUrl FROM video";
+        $sql = "SELECT vidTopic,vidUrl,approved FROM video";
         $result = mysqli_query($db,$sql);
         // If result matched $myemail and $mypassword, table row must be 1 row
         $rows = array();
          
         while($row = mysqli_fetch_assoc($result)) {
-            
-            $rows[] = $row;
+            if($row['approved'] == 'yes'){
+                $rows[] = $row;
+            }
         }
         
         return json_encode($rows);
@@ -21,4 +22,3 @@ session_start();
 
     
 ?>
-
