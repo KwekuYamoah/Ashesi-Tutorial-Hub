@@ -53,10 +53,6 @@
                 <div class="form-holder">
                     <input type="url" name="url" id="url" placeholder="Link" class="form-control" style="font-size: 15px;">
                 </div>
-                <div class="form-holder">
-                  <input type="file"  class="form-holder" name="file" id="file" placeholder="Upload Snippet" class="form-control" style="font-size: 15px;">
-                </div>
-                
                 <div class="form-login">
                     <button type="submit" name="signup" id="signup" value="Register">Submit</button>
                 </div>

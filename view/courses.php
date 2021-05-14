@@ -1,9 +1,13 @@
 <?php
+  
   $title = "Courses|Ashesi Tutorial Hub"; //title for header
   //include header which uses title
   include_once("../inc/header.php");
+  
   //including navigation header
   include_once("../inc/nav.php");
+  session_start();
+
 ?>
   <main id="main" data-aos="fade-in">
 
@@ -11,7 +15,7 @@
     <div class="breadcrumbs">
       <div class="container">
         <h2>Courses</h2>
-        <p>What course do you need info about? </p>
+        <p>What course do you need to Learn?</p>
       </div>
     </div><!-- End Breadcrumbs -->
 
@@ -23,14 +27,9 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="course-item">
-              <img src="../assets/img/course-1.jpg" class="img-fluid" alt="...">
+            <iframe width="100%" height="60%" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
               <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Web Development</h4>
-                  <!-- <p class="price">$169</p> -->
-                </div>
-
-                <h3><a href="course-details.php">Website Design</a></h3>
+                
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -107,7 +106,7 @@
   </main><!-- End #main -->
 
 
-  <?php
+<?php
   //include footer
   include_once("../inc/footer.php");
 ?>
